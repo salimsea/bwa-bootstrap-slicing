@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+p {
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #2F281E;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #FF9900;
+    border: 0;
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #FF9900;
+    border: 0;
+}
+
+.btn-secondary {
+    background: none;
+    border: 1px #BCD0E5 solid;
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #173A56;
+}
+
+.btn-secondary:hover {
+    background: #173A56;
+    border: 1px #BCD0E5 solid;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    transition: 1s;
+}
+
+.herobwa {
+    margin-top: 120px;
+}
+
+.herobwa h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2F281E;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    color: #2F281E;
+}
+
+.navbar-nav .nav-item {
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-primary, .btn-secondary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+    .navbar-nav .nav-item {
+        align-self: start !important;
+    }
+}
+
+.featurebwa {
+    padding: 120px 0px 100px 0px;
+    background-image: url("../../assets/images/bg-feature.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.featurebwa h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2F281E;
+    margin:0 auto;
+    max-width: 60%;
+}
+.featurebwa h4 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #2F281E;
+    font-size: 16px;
+}
+.effortbwa {
+    margin-bottom: 100px;
+}
+
+.effortbwa h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.productbwa {
+    margin-bottom: 100px;
+}
+
+.productbwa h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.productbwa .icon-title {
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #2F281E;
+    top:-15px;
+    position:relative;
+    font-size: 13px;
+}
+
+.productbwa ul {
+    list-style-image: url("../../assets/images/product-check-icon.png");
+}
+
+.productbwa ul li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.marketbwa {
+    margin-bottom: 100px;
+}
+
+.marketbwa h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.blogbwa {
+    /* padding-top: 200px; */
+    padding: 100px 0px 100px 0px;
+    background-image: url("../../assets/images/bg-blog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogbwa h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #2F281E;
+}
+
+.blogbwa .blog-carousel h4 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #2F281E;
+    font-size: 19px;
+}
+.blogbwa .blog-carousel h4:hover {
+    color:#FF9900;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.blogbwa .blog-carousel {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+
+.blogbwa .blog-carousel .slick-dots li button:before {
+    font-size: 20px;
+    color: #FF9900 !important;
+}
+
+.footerbwa {
+    border-top: 1px #f7f4f4 solid;
+    padding: 100px 0px 50px 0px;
+    
+}
+
+/* 
+@media (min-width: 768px) {
+    ...
+}
+
+@media (min-width: 992px) {
+    ...
+}
+
+@media (min-width: 1200px) {
+    ...
+} */
