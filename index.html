@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>BWA Strap</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
 </head>
@@ -66,22 +66,22 @@
                 </h2>
             </div>
             <div class="row mt-5" data-aos="slide-up">
-                <div class="col-md-3">
+                <div class="col-md-3 icon-feature">
                     <img src="assets/images/feature-icon1.png" alt="">
                     <h4>First click tests</h4>
                     <p>While most people enjoy casino gambling,</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 icon-feature">
                     <img src="assets/images/feature-icon2.png" alt="">
                     <h4>Design surveys</h4>
                     <p>Sports betting, lottery and bingo playing for the fun</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 icon-feature">
                     <img src="assets/images/feature-icon3.png" alt="">
                     <h4>Preference tests</h4>
                     <p>The Myspace page defines the individual.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 icon-feature">
                     <img src="assets/images/feature-icon4.png" alt="">
                     <h4>Five second tests</h4>
                     <p>Personal choices and the overall personality of the person. </p>
@@ -138,7 +138,7 @@
                 <div class="col-md-6" data-aos="flip-right">
                     <img src="assets/images/product-icon.png" class="img-fluid" width="520" alt="">
                 </div>
-                <div class="col-md-6 align-self-center order-md-0" data-aos="fade-left">
+                <div class="col-md-6 align-self-center order-first order-md-last" data-aos="fade-left">
                     <p>
                         Easier decision making for
                     </p>
@@ -220,7 +220,7 @@
                 Join 40,000+ other marketers and get proven strategies on email marketing
             </p>
             <div class="blog-carousel">
-                <div data-aos="fade-up" data-aos-delay="1100">
+                <div data-aos="fade-up" data-aos-delay="100">
                     <img src="assets/images/blog-dummy1.png" width="348" class="img-fluid" alt="" />
                     <p class="mt-4">
                         By <span class="font-weight-bold">Abdullah</span> | 03 March 2019
@@ -229,7 +229,7 @@
                         </h4>
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="2200">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <img src="assets/images/blog-dummy2.png" width="348" class="img-fluid" alt="" />
                     <p class="mt-4">
                         By <span class="font-weight-bold">Abdullah</span> | 03 March 2019
@@ -238,7 +238,7 @@
                         </h4>
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="3300">
+                <div data-aos="fade-up" data-aos-delay="300">
                     <img src="assets/images/blog-dummy3.png" width="348" class="img-fluid" alt="" />
                     <p class="mt-4">
                         By <span class="font-weight-bold">Abdullah</span> | 03 March 2019
@@ -247,7 +247,7 @@
                         </h4>
                     </p>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="4400">
+                <div data-aos="fade-up" data-aos-delay="400">
                     <img src="assets/images/blog-dummy1.png" width="348" class="img-fluid" alt="" />
                     <p class="mt-4">
                         By <span class="font-weight-bold">Abdullah</span> | 03 March 2019
@@ -264,10 +264,10 @@
     <section class="footerbwa"> 
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-3">
                     <img width="185" src="assets/images/logo.png" alt="">
                 </div>
-                <div class="col">
+                <div class="col-md-3">
                     <h4 class="mb-4">
                         Quick Links
                     </h4>
@@ -276,7 +276,7 @@
                     <P>Contact</P>
                     <P>FAQ</P>
                 </div>
-                <div class="col">
+                <div class="col-md-3">
                      <h4 class="mb-4">
                         Legal Stuff
                     </h4>
@@ -285,7 +285,7 @@
                     <P>Privacy Policy</P>
                     <P>Terms of Service</P>
                 </div>
-                <div class="col">
+                <div class="col-md-3">
                     <h5 class="mb-4">
                         knowing you're always on the best energy deal. 
                     </h5>
@@ -303,46 +303,49 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     
     <script>
-        AOS.init({
-            duration: 1200,
-        })
-        $('.blog-carousel').slick({
-            dots: true,
-            arrow: false,
-            autoplay: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            responsive: [{
-                breakpoint: 1199,
-                settings: {
+        $(function() {
+            AOS.init({
+                duration: 1200,
+            })
+            $('.blog-carousel').slick({
+                dots: true,
+                arrow: false,
+                autoplay: true,
+                infinite: true,
+                speed: 500,
                 slidesToShow: 3,
-                slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 680,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 1199,
+                    settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 680,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
         });
+        
     </script>
 </body>
 </html>
